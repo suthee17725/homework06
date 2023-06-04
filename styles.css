@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Nav */
+
+nav {
+  display: flex;
+  justify-content: end;
+  margin: 20px;
+}
+
+nav a {
+  margin-inline: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+/* index */
+/* Section my bio*/
+
+.Containerbio {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: center;
+  margin: 50px;
+  height: 200px;
+}
+
+.Containerbio > img {
+  height: 150px;
+  border-radius: 50%;
+}
+
+.mybiodata {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+.mybiodata > p {
+  width: 70%;
+  padding-block: 20px;
+}
+
+.mybiodata > a {
+  text-decoration: none;
+  background: salmon;
+  color: white;
+  width: 160px;
+  text-align: center;
+  padding: 6px;
+}
+
+/* Section middle */
+
+.middle {
+  background: rgb(216, 238, 248);
+}
+
+.headmiddle {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 80%;
+  margin-inline: auto;
+  padding-top: 15px;
+}
+
+.headmiddle > a {
+  color: rgb(53, 243, 164);
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.datamiddle {
+  width: 83%;
+  margin: auto;
+  display: flex;
+  padding-bottom: 12px;
+}
+
+.boxdata {
+  background: white;
+  margin: 10px;
+  padding: 12px;
+}
+
+.boxdata > p {
+  margin-block: 15px;
+}
+
+/* Section Bottom*/
+
+.bottom {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  padding-inline: 100px;
+}
+
+.boxbottom {
+  display: flex;
+  border-bottom: 1px solid silver;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.bottom > p {
+  padding-block: 20px;
+}
+
+.databottom {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: start;
+  padding: 10px;
+}
+
+.num {
+  background-color: rgb(200, 224, 64);
+  color: white;
+  padding-inline: 8px;
+  border-radius: 16px;
+  margin-right: 16px;
+}
+
+.letter {
+  color: silver;
+}
+
+.picbottom {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.picbottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
+
+footer {
+  height: 100px;
+  width: 400px;
+  margin-inline: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-block: 50px;
+}
+
+.IconsConcact > i {
+  margin-inline: 15px;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+footer > p {
+  padding-bottom: 50px;
+}
+
+/* Blog */
+
+.middleBlog {
+  margin: 50px;
+  margin-inline: auto;
+  width: 70%;
+}
+
+.middleBlog > p {
+  font-size: 1.6em;
+  font-weight: 900;
+  padding-left: 24px;
+}
+
+.middleBlog a {
+  text-decoration: none;
+  color: silver;
+}
+
+.middleBlog > div {
+  border-bottom: 1px solid silver;
+}
+
+/* Work */
+
+.middleWorks {
+  margin-inline: auto;
+  width: 70%;
+}
+
+.middleWorks > p {
+  font-size: 1.6em;
+  font-weight: 900;
+}
+
+/* Contact */
+
+.mainContact {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 70%;
+  margin: auto;
+}
+
+.mainContact * {
+  margin-block: 10px;
+}
+
+.num2 {
+  background-color: salmon;
+  color: white;
+  padding-inline: 8px;
+  border-radius: 16px;
+  margin-right: 16px;
+  margin-left: 8px;
+}
+
+
+
+@media (max-width: 500px) {
+  /* BioHome */
+  .Containerbio {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .Containerbio > img {
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  .myname {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .mybiodata {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .mybiodata > p {
+    width: 95%;
+    padding-block: 20px;
+    text-align: center;
+  }
+
+  .mybiodata > a {
+    text-decoration: none;
+    background: salmon;
+    color: white;
+    width: 160px;
+    text-align: center;
+    padding: 6px;
+  }
+
+  /* middle main */
+  .middle {
+    background: rgb(216, 238, 248);
+    margin-top: 170px;
+  }
+
+  .headmiddle {
+    overflow: hidden;
+    margin-left: 40%;
+  }
+
+  .headmiddle > a {
+    color: rgb(2, 161, 161);
+    text-decoration: none;
+    font-size: 0.8em;
+  }
+
+  .datamiddle {
+    width: 83%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 12px;
+  }
+
+  /* bottom main */
+
+  .bottom {
+    flex-flow: column nowrap;
+    padding-inline: 5%;
+  }
+
+  .boxbottom {
+    flex-flow: column nowrap;
+  }
+
+  .bottom > p {
+    text-align: center;
+  }
+
+  .numLet {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .bottom img {
+    width: 95%;
+  }
+
+  /* Block */
+  .middleBlog {
+    width: 95%;
+  }
+
+  /* Work */
+  .middleWorks {
+    margin-inline: auto;
+    width: 95%;
+  }
+
+  .middleWorks > p {
+    margin-left: -300px;
+  }
+}
